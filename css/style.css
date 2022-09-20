@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+    font-size: x-large;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    padding: 30px;
+    flex-direction: column;
+    box-shadow: 0 10px 15px rgb(155, 153, 153);
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 5px;
+}
+
+#inputRange{
+    width: 90%;
+}
+
+.inputColor{
+    accent-color: rgb(73, 43, 226);
+    border-color: rgb(73, 43, 226);
+}
+
+#btn{
+    background-color: rgb(73, 43, 226);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
