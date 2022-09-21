@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senha aleatória</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de senha</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <input type="text" id="inputSenha">
+  <main>
+    <section class="container">
+      <h1>Gerador de senha </h1>
+      <input type="text" id="inputSenha" class="inputSenha hide">
 
-        <section>
-            <div class="checkbox">
-                <input type="range" min="6" max="32" value="18" id="inputRange" class="inputColor">
-                <label for="labelLenghtId"></label>
-            </div>       
-        
-            <div class="checkbox">
-                <input type="checkbox" id="checkLetraMinus" class="inputColor">
-                <label for="checkLetraMinus">Letras Minúculas</label>
-            </div>
-       
-            <div class="checkbox">
-                <input type="checkbox" id="checkLetraMaius" class="inputColor">
-                <label for="checkLetraMaius">Letras Maiúsculas</label>
-            </div>
+      <section>
+        <input type="range" min="6" max="32" value="16" id="inputSlider">
+        <label for="inputSlider" id="inputLabel"></label>
+        <div>
+          <p>Aperte para gerar sua senha:</p>
+        </div>
+        <button id="btnGerar">Gerar</button>
+      </section>
+      
 
-            <div class="checkbox">
-                <input type="checkbox" id="checkNumeros" class="inputColor">
-                <label for="checkNumeros">Números</label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="checkSimbolos" class="inputColor">
-                <label for="checkSimbolos">Símbolos</label>
-            </div>
-            <button id="btn">Gerar</button>
-        </section>
-    </main>
-    <script src="js/script.js"></script>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
 </body>
 </html>

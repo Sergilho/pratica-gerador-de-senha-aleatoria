@@ -1,49 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
-    font-size: x-large;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Neue', cursive;
 }
 
-body{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }
 
-main{
-    padding: 30px;
-    flex-direction: column;
-    box-shadow: 0 10px 15px rgb(155, 153, 153);
+main {
+  padding: 40px;
+  margin: 30px;
+  box-shadow: 0 1px 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.checkbox{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin: 5px;
+#inputSenha {
+  width: 100%;
 }
 
-#inputRange{
-    width: 90%;
+#inputSlider {
+  width: 90%;
+  cursor: pointer;
+  accent-color: blueviolet;
+  border-color: blueviolet;
 }
 
-.inputColor{
-    accent-color: rgb(73, 43, 226);
-    border-color: rgb(73, 43, 226);
+#btnGerar {
+  margin-top: 10px;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 5px;
 }
 
-#btn{
-    background-color: rgb(73, 43, 226);
-    color: white;
-    border: none;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
+p {
+  font-weight: bold;
+  font-size: large;
+}
 
+.hide {
+  display: none;
 }
