@@ -54,3 +54,7 @@ p {
 .hide {
   display: none;
 }
+
+.inputSenha {
+ padding: 5px;
+}

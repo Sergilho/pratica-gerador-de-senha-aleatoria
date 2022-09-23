@@ -1,9 +1,7 @@
-const senha = document.querySelector("#inputSenha");
-const slider = document.querySelector("#inputSlider");
-const sliderLabel = document.querySelector("#inputLabel");
-const btnGerar = document.querySelector("#btnGerar");
-const caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*()+=0123456789";
-const novaSenha = "";
+let senha = document.querySelector("#inputSenha");
+let slider = document.querySelector("#inputSlider");
+let sliderLabel = document.querySelector("#inputLabel");
+let btnGerar = document.querySelector("#btnGerar");
 
 sliderLabel.innerHTML = slider.value
 slider.addEventListener("change", () =>{
@@ -12,22 +10,28 @@ slider.addEventListener("change", () =>{
 
 
 // function GerarSenha(){
+//     let caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*()+=0123456789";
 //     let senha1 = "";
-    
-//     for(let x = 0, i = caracteres.length; x < slider.length; x++){
-//         senha1 += caracteres.charAt(Math.floor(Math.random() * i));
+
+//     for(let x = 0; x < slider.value; x++){
+//         senha1 += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
 //     }
-  
-//     senha.innerHTML = senha1
-//     console.log(senha1)
-// }
-btnGerar.addEventListener("click", () =>{
-        let senha1 = "";
+
+//     senha.classList.remove("hide")
+//     senha.innerHTML = senha1;
     
-        for(let x = 0, i = caracteres.length; x < slider.length; x++){
-        senha1 += caracteres.charAt(Math.floor(Math.random() * i));
-        }
-  
-    senha.innerHTML = senha1
+// }
+
+
+btnGerar.addEventListener("click", () =>{
+    let caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*()+=0123456789";
+    let senha1 = "";
+
+    for(let x = 0; x < slider.value; x++){
+        senha1 += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+    }
+
+    senha.classList.remove("hide")
+    senha.innerHTML = senha1; 
     console.log(senha1)
 })
